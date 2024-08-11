@@ -4,7 +4,7 @@
 .nav {
     position: relative;
     background-color: $secondColor;
-    box-shadow: 0 0 10px #333;
+    box-shadow: 0 0 10px $firstcolor;
     z-index: 100;
 
     &__box {
@@ -49,6 +49,7 @@
                 flex-direction: column;
                 align-items: center;
                 background-color: $secondColor;
+                border-bottom: solid 1px $firstcolor;
                 transform: translateY(55%);
                 z-index: -1;
 
