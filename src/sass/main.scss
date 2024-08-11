@@ -4,6 +4,7 @@
 .nav {
     position: relative;
     background-color: $secondColor;
+    box-shadow: 0 0 10px #333;
     z-index: 100;
 
     &__box {
