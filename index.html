@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,64 @@
     <meta name="generator" content="Visual Studio Code">
     <meta name="keywords" content="">
     <title>Boguś</title>
+
+    <script src="https://kit.fontawesome.com/2abb6e3bac.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
+
 <body>
     <nav class="nav">
     <div class="wrapper nav__box">
         <div class="nav__box__logo">
-            <img src="../src/img/svg/logo.svg" alt="logo">
+            <img src="./src/img/svg/logo.svg" alt="logo">
         </div>
         <div class="nav__box__menu">
-            <a href="">Home</a>
-            <a href="">Masaże</a>
-            <a href="">Cenik</a>
-            <a href="">Kontakt</a>
+
+            <div class="nav__box__menu__burger">
+                <i class="nav__box__menu__burger--icon fa-solid fa-bars"></i>
+            </div>
+
+            <div class="nav__box__menu__elements">
+                <a href="">Home</a>
+                <a href="">Oferta</a>
+                <a href="">Cenik</a>
+                <a href="">Kontakt</a>
+            </div>
+
         </div>
     </div>
 </nav>
+
+
     
     
     
-    
+    <section class="cookie">
+    <div class="wrapper cookie__box">
+        <p class="cookie__box--text">Strona używam Google Analytics do zbierania danych użytkowników, aby
+            zrozumieć, w jaki sposób korzystasz z witryny.
+            Na podstawie tych danych poprawię jej wygląd i funkcjonalność. </p>
+
+        <button class="cookie__btn">Akceptuje</button>
+        <button class="disclaimer__btn">Pokaż zastrzeżenia</button>
+
+        <p class="cookie__box--text disclaimer__text hide-cookies">Za Twoją zgodą Google Analytics będzie
+            przetwarzać i gromadzić Twoje
+            dane
+            osobowe (pliki cookie i adres IP) w celu dostarczania cennych informacji. Google Analytics prześle Twoje
+            dane do
+            Stanów Zjednoczonych i będzie je przechowywać przez 2 miesiące.</p>
+    </div>
+</section>
+
+    <script src="./dist/js/main.min.js"></script>
+
+
 </body>
+
 </html>
