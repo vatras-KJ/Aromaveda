@@ -1,2 +1,27 @@
 @use './_reset' as *;
 @use './_components' as *;
+
+.nav {
+    background-color: $secondColor;
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__logo {
+            img {
+                margin: 2rem;
+                width: 60px;
+            }
+        }
+
+        &__menu {
+            a {
+                font-size: 1.8rem;
+                margin: 0 1rem;
+                letter-spacing: 1.5px;
+                color: $darkcolor;
+            }
+        }
+    }
+}
