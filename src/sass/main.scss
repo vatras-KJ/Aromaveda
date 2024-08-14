@@ -75,7 +75,78 @@
     }
 }
 
+.ofert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $darkcolor;
+    padding: 4rem 2rem;
 
+    & th {
+        padding: 1rem;
+    }
+
+    &__table {
+        margin: 4rem 0;
+        width: 100%;
+        max-width: 992px;
+        border-collapse: collapse;
+        color: $thirdColor;
+
+        &__title {
+            margin: 0 auto;
+            padding: 2rem 0;
+            font-size: 2.4em;
+            color: $firstcolor;
+            text-transform: uppercase;
+        }
+
+        &__head {
+            &--name {
+                font-size: 2rem;
+            }
+
+            &__times{
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+
+            & .desktop {
+                display: none;
+                font-size: 2rem;
+                font-weight: 400;
+            }
+        }
+
+        &__body {
+
+            &__title {
+                margin: 1rem;
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: $firstcolor;
+            }
+
+            &__text {
+                font-size: 1.4rem;
+            }
+
+            &__elements {
+                border-bottom: 1px solid $secondColor;
+
+                &--desktop-box {
+                    display: none;
+                }
+
+            }
+
+            & .ofert__price {
+                font-size: 1.7rem;
+            }
+        }
+
+    }
+}
 
 
 
@@ -134,3 +205,5 @@
 		transform: translateY(0);
 	}
 }
+
+@import './_small';
