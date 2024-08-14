@@ -1,37 +1,13 @@
 @media (min-width: 576px) {
 	.ofert {
-		display: flex;
-		flex-direction: column;
 		align-items: center; // new
-		background-color: $darkcolor;
-		padding: 4rem 2rem;
-
-		& th {
-			padding: 1rem;
-			text-align: start; // new
-		}
 
 		&__table {
-			margin: 4rem 0;
-			border-collapse: collapse;
-			color: $thirdColor;
-
-			&__title {
-				padding: 2rem 0;
-				font-size: 2.4em;
-				color: $firstcolor;
-				text-transform: uppercase;
-			}
+            &__title {
+                margin: 1rem 0;
+            }
 
 			&__head {
-				&--name {
-					font-size: 2rem;
-				}
-
-				&__times {
-					font-size: 1.4rem;
-					font-weight: bold;
-				}
 
 				& .mobile {
 					display: none; //new
@@ -45,29 +21,22 @@
 			&__body {
 				&__title {
 					margin: 1rem 0; // new
-					font-size: 1.8rem;
-					font-weight: bold;
-					color: $firstcolor;
-				}
-
-				&__text {
-					font-size: 1.4rem;
 				}
 
 				&__elements {
-					border-bottom: 1px solid $secondColor;
 
 					&--mobile-box {
-						display: none;
+						display: none; //new
 					}
 
 					&--desktop-box {
-						display: inline-block;
+						display: inline-block; //new
+                        text-align: start; //new
 					}
 				}
 
 				& .ofert__price {
-					font-size: 1.7rem;
+                    width: 13%; //new
 				}
 			}
 		}
