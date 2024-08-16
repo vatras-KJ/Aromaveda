@@ -1,12 +1,16 @@
 const barsMenu = document.querySelector('.nav__box__menu__burger')
 const menuBox = document.querySelector('.nav__box__menu__elements')
 
-function openMenu () {
+const openMenu = () => {
     menuBox.classList.toggle('nav__box__menu__elements--open')
-}
+} 
+
+const closeNavbar = () => {
+    menuBox.classList.remove('nav__box__menu__elements--open')
+ }
 
 barsMenu.addEventListener('click', openMenu)
-
+menuBox.addEventListener('click', closeNavbar)
 
 
 const cookieBox = document.querySelector('.cookie')

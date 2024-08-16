@@ -1,4 +1,5 @@
 $firstcolor: #e2ca82;
+$lightFirstColor: rgba(226, 202, 130, 0.5);
 $secondColor: #fdf7e5;
 $thirdColor: #fdf7e5;
 $darkcolor: #333;
@@ -14,4 +15,8 @@ html {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
+}
+
+.active {
+	background-color: $lightFirstColor;
 }

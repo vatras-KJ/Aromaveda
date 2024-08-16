@@ -1,4 +1,35 @@
 @media (min-width: 992px) {
+
+    .nav { 
+        &__box {
+            &__menu {
+                &__burger {
+
+                   &--icon {
+                    display: none;
+                   }
+
+                }
+    
+                &__elements {
+                    display: flex;
+                    position: relative;
+                    padding: 0 2rem;
+                    bottom: 0;
+                    width: 100%; 
+                    flex-direction: row;
+                    border-bottom: solid 0px $firstcolor;
+                    transform: translateY(0);
+                    z-index: 90;
+
+                    & a {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
     .ofert {
         &__table {
     

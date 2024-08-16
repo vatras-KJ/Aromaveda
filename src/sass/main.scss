@@ -2,7 +2,8 @@
 @use './_components' as *;
 
 .nav {
-    position: relative;
+    position: fixed;
+    width: 100%;
     background-color: $secondColor;
     box-shadow: 0 0 10px $firstcolor;
     z-index: 100;
@@ -26,6 +27,7 @@
 
                &--icon {
                 padding: 1rem;
+                color: #333;
                 font-size: 4rem;
                 border: solid 1px transparent;
                 border-radius: 8px;
@@ -73,6 +75,10 @@
             }
         }
     }
+}
+
+header{
+    height: 100vh;
 }
 
 .ofert {
