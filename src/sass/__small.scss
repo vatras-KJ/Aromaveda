@@ -41,5 +41,38 @@
 			}
 		}
 	}
+	
+	.footer {
+		&__contact{
+			&__box{
+				&__links {
+					display: flex;
+					justify-content: flex-start;
+					text-align: left;
+					font-size: 1.8rem;
 
+					&__elements {
+						padding: 0 0 0 0;
+					}
+
+					&__adres {
+						margin-right: 4rem;
+					}
+				}
+
+				&__downloand {
+					justify-content: flex-start;
+				}
+
+
+			}
+
+		}
+
+		.downloand--file {
+			&:first-child {
+				margin-right: 2rem;
+			}
+		}
+	}
 }

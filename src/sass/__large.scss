@@ -1,68 +1,80 @@
 @media (min-width: 992px) {
+	.nav {
+		&__box {
+			&__menu {
+				&__elements {
+					& a {
+						&:first-child {
+							display: inline-block;
+						}
+					}
+				}
+				&__burger {
+					&--icon {
+						display: none;
+					}
+				}
 
-    .nav { 
-        &__box {
-            &__menu {
-                &__burger {
+				&__elements {
+					display: flex;
+					position: relative;
+					padding: 0 2rem;
+					bottom: 0;
+					width: 100%;
+					flex-direction: row;
+					border-bottom: solid 0px $firstcolor;
+					transform: translateY(0);
+					z-index: 90;
 
-                   &--icon {
-                    display: none;
-                   }
+					& a {
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+	}
 
-                }
-    
-                &__elements {
-                    display: flex;
-                    position: relative;
-                    padding: 0 2rem;
-                    bottom: 0;
-                    width: 100%; 
-                    flex-direction: row;
-                    border-bottom: solid 0px $firstcolor;
-                    transform: translateY(0);
-                    z-index: 90;
+	.ofert {
+		&__table {
+			&__title {
+				font-size: 3rem;
+			}
 
-                    & a {
-                        font-size: 2rem;
-                    }
-                }
-            }
-        }
-    }
+			&__head {
+				&__times {
+					font-size: 1.8rem;
+				}
 
-    .ofert {
-        &__table {
-    
-            &__title {
-                font-size: 3rem;
-            }
-    
-            &__head {
-    
-                &__times{
-                    font-size: 1.8rem;
-                }
-    
-                & .desktop {
-                    font-size: 2.2rem;
-                }
-            }
-    
-            &__body {
-    
-                &__title {
-                    font-size: 2rem;
-                }
-    
-                &__text {
-                    font-size: 1.8rem;
-                }
-    
-                & .ofert__price {
-                    font-size: 2rem;
-                }
-            }
-    
-        }
-    }
+				& .desktop {
+					font-size: 2.2rem;
+				}
+			}
+
+			&__body {
+				&__title {
+					font-size: 2rem;
+				}
+
+				&__text {
+					font-size: 1.8rem;
+				}
+
+				& .ofert__price {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	.footer {
+		&__contact {
+			&__box {
+				&__links {
+					&__elements {
+						margin: 0 2rem;
+					}
+				}
+			}
+		}
+	}
 }
