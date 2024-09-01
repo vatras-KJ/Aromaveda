@@ -1,0 +1,134 @@
+@media (min-width: 992px) {
+	.nav {
+		&__box {
+			&__menu {
+				&__elements {
+					& a {
+						&:first-child {
+							display: inline-block;
+						}
+					}
+				}
+				&__burger {
+					&--icon {
+						display: none;
+					}
+				}
+
+				&__elements {
+					display: flex;
+					position: relative;
+					padding: 0 2rem;
+					bottom: 0;
+					width: 100%;
+					flex-direction: row;
+					border-bottom: solid 0px $firstcolor;
+					transform: translateY(0);
+					z-index: 90;
+
+					& a {
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	.ayurveda {
+		&__hero {
+			min-height: 500px;
+		}
+
+		&--title {
+			font-size: 6rem;
+		}
+
+		&__box {		
+			&--text {
+				font-size: 2.2rem;
+				line-height: 30px;
+			}
+
+			&__second {
+				margin-top: 1rem;
+
+				&--title {
+					font-size: 3rem;
+				}
+
+				&__elements {
+					display: flex;
+					justify-content: center;
+
+					&--text {
+						width: 40%;
+						min-height: 100px;
+					}
+		
+					& p:first-child {
+						margin-bottom: 0;
+						margin-right: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	.target {
+		&--title {
+			font-size: 4rem;
+		}
+
+		&--text {
+			font-size: 2.2rem;
+		}
+	}
+
+	.ofert {
+		&__table {
+			&__title {
+				font-size: 3rem;
+			}
+
+			&__head {
+				&__times {
+					font-size: 1.8rem;
+
+				}
+
+				& .desktop, &__times th {
+					font-size: 2.2rem;
+				}
+			}
+
+			&__body {
+				&__title {
+					font-size: 2rem;
+				}
+
+				&__text {
+					font-size: 1.8rem;
+				}
+
+				& .ofert__price {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	.footer {
+		&__contact {
+			&--text {
+				font-size: 2rem;
+			}
+			&__box {
+				&__links {
+					&__elements {
+						margin: 0 2rem;
+					}
+				}
+			}
+		}
+	}
+}

@@ -32,6 +32,17 @@ const handleCookieBox = () => {
 
 const handleCookieBoxDisclaimer = () => {
     disclaimerText.classList.toggle('hide-cookies')
+
+   switch(disclaimerBtn.textContent.toLowerCase()) {
+    case "pokaż zastrzeżenia":
+    disclaimerBtn.textContent = 'ukryj zastrzeżenia'
+    break
+    case "ukryj zastrzeżenia":
+    disclaimerBtn.textContent = 'pokaż zastrzeżenia'
+    break
+   }
+
+   
 }
 
 cookieBtn.addEventListener('click', handleCookieBox)

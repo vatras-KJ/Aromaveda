@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+
+    .footer {
+		&__contact{
+			&__box{
+				flex-direction: row;
+				justify-content: flex-start;
+				padding-bottom: 2rem;
+
+				&__links {
+					&__elements {
+						padding-bottom: 0;
+					}
+				}
+	
+				&__downloand {
+					flex-direction: column;
+					justify-content: flex-start;
+					margin: 0 0 0 4rem;
+					padding: 0;
+				}
+
+			}
+		}
+
+		.downloand--file {
+			margin: .5rem 0;
+			width: 200px;
+	
+			&:first-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

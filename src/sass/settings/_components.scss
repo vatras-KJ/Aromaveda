@@ -1,0 +1,59 @@
+$firstcolor: #e2ca82;
+$lightFirstColor: rgba(226, 202, 130, 0.5);
+$secondColor: #fdf7e5;
+$thirdColor: #f6ebcd;
+$darkcolor: #333;
+
+@font-face {
+    font-family: 'palatino_linotyperegular';
+    src: url('../../fonts/PalatinoLinotype/palatino-linotype-webfont.woff2') format('woff2'),
+         url('../../fonts/PalatinoLinotype/palatino-linotype-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+	font-display: swap;
+
+}
+
+html {
+	font-family: 'palatino_linotyperegular', 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+	scroll-padding-top: 86px;
+	font-size: 62.5%;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.active {
+	background-color: $lightFirstColor;
+}
+
+p, a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.8rem;
+}
+
+.palatino {
+	font-family: 'palatino_linotyperegular', 'Montserrat', sans-serif;
+}
+
+.padding--sections {
+    padding: 4rem 2rem;
+}
+
+.downloand--file {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: $firstcolor;
+    border: 1px solid $firstcolor;
+    border-radius: 12px;
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: $lightFirstColor;
+    }
+}

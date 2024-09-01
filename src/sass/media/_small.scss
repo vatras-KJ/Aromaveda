@@ -1,0 +1,111 @@
+@media (min-width: 576px) {
+	.ayurveda {
+		&__hero {
+			min-height:400px;
+		}
+
+		&--title {
+			font-size: 4.5rem;
+		}
+
+		&__box {
+			&--text {
+				text-align: left;
+			}
+
+			&__second {
+				&--title {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+
+	.target {
+		&--title {
+			font-size: 3.5rem;
+		}
+	}
+
+	.information {
+		&__box {
+			&--text {
+				margin-bottom: 2rem;
+				line-height: 30px;
+				font-size: 2.2rem;
+			}
+		}
+	}
+
+	.ofert {
+		align-items: center; // new
+
+		&__table {
+			&__title {
+				margin: 1rem 0;
+			}
+
+			&__head {
+				& .mobile {
+					display: none; //new
+				}
+
+				& .desktop {
+					display: inline-block; //new
+				}
+			}
+
+			&__body {
+				&__title {
+					margin: 1rem 0; // new
+				}
+
+				&__elements {
+					&--mobile-box {
+						display: none; //new
+					}
+
+					&--desktop-box {
+						display: inline-block; //new
+						text-align: start; //new
+					}
+				}
+
+				& .ofert__price {
+					width: 13%; //new
+				}
+			}
+		}
+	}
+
+	.footer {
+		&__contact {
+			&__box {
+				&__links {
+					display: flex;
+					justify-content: flex-start;
+					text-align: left;
+					font-size: 1.8rem;
+
+					&__elements {
+						padding: 0 0 0 0;
+					}
+
+					&__adres {
+						margin-right: 4rem;
+					}
+				}
+
+				&__downloand {
+					justify-content: flex-start;
+				}
+			}
+		}
+
+		.downloand--file {
+			&:first-child {
+				margin-right: 2rem;
+			}
+		}
+	}
+}
