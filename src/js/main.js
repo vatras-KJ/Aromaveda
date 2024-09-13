@@ -1,5 +1,9 @@
 const barsMenu = document.querySelector('.nav__box__menu__burger')
 const menuBox = document.querySelector('.nav__box__menu__elements')
+const cookieBox = document.querySelector('.cookie')
+const cookieBtn = document.querySelector('.cookie__btn')
+const disclaimerBtn = document.querySelector('.disclaimer__btn')
+const disclaimerText = document.querySelector('.disclaimer__text')
 
 const openMenu = () => {
     menuBox.classList.toggle('nav__box__menu__elements--open')
@@ -8,15 +12,6 @@ const openMenu = () => {
 const closeNavbar = () => {
     menuBox.classList.remove('nav__box__menu__elements--open')
  }
-
-barsMenu.addEventListener('click', openMenu)
-menuBox.addEventListener('click', closeNavbar)
-
-
-const cookieBox = document.querySelector('.cookie')
-const cookieBtn = document.querySelector('.cookie__btn')
-const disclaimerBtn = document.querySelector('.disclaimer__btn')
-const disclaimerText = document.querySelector('.disclaimer__text')
 
 const showCookie = () => {
     const cookieEaten = localStorage.getItem('cookie')
@@ -41,10 +36,18 @@ const handleCookieBoxDisclaimer = () => {
     disclaimerBtn.textContent = 'pokaż zastrzeżenia'
     break
    }
-
-   
 }
 
+const footerYear = document.querySelector('.footer--year')
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
+barsMenu.addEventListener('click', openMenu)
+menuBox.addEventListener('click', closeNavbar)
 cookieBtn.addEventListener('click', handleCookieBox)
 disclaimerBtn.addEventListener('click', handleCookieBoxDisclaimer)
-showCookie()
+document.addEventListener('DOMContentLoaded', showCookie)
+
+handleCurrentYear()

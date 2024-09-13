@@ -17,7 +17,7 @@ const paths = {
     html: './html/**/*.kit',
     sass: './src/sass/**/*.scss',
     js: './src/js/**/*.js',
-    img: './src/img',
+    img: './src/img/*',
     dist: './dist',
     sassDest: './dist/css',
     jsDest: './dist/js',
@@ -86,6 +86,6 @@ function watchForChanges(done) {
 	done()
 }
 
-const mainFunctions = parallel(handleKit, sassCompiler, javaScript, convertImages) // convertImages
+const mainFunctions = parallel(handleKit, sassCompiler, javaScript, convertImages) 
 exports.default = series(mainFunctions, startBrowserSync, watchForChanges)
 exports.cleanStuff = cleanStuff

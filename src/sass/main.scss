@@ -14,6 +14,15 @@
 		justify-content: space-between;
 
 		&__logo {
+			display: flex;
+			align-items: center;
+
+			&--text {
+				font-size: 1.8rem;
+				letter-spacing: 1.6px;
+				text-transform: uppercase;
+			}
+
 			img {
 				margin: 2rem;
 				width: 60px;
@@ -100,53 +109,63 @@
 	}
 }
 
-header {
-	height: 100vh;
-}
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../img/hero_small.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	max-height: 100vh;
+	z-index: 0;
 
-
-// test test
-.container {
-	max-width: 1600px;
-	margin: 0 auto;
-	padding: 4rem 2rem;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 20px 20px;
-	grid-auto-flow: row;
-	grid-template-areas:
-		'photo-1 photo-1 Photo-2'
-		'Photo-3 Photo-4 Photo-5';
-
-	& img {
+	&::after {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
 		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	&--title {
+		padding: 2rem;
+		font-size: 4rem;
+		letter-spacing: 2px;
+		color: $firstcolor;
+		text-transform: uppercase;
+		z-index: 1;
+	}
+
+	&--btn {
+		display: flex;
+		align-items: center;
+		margin-top: 10rem;
+		padding: 2rem 4rem;
+		max-width: 20rem;
+		max-height: 5rem;
+		font-size: 2rem;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		background-color: $firstcolor;
+		border: none;
+		border-radius: 12px;
+		transition: background-color 0.3s;
+		cursor: pointer;
+		z-index: 1;
+
+		&:hover {
+			background-color: hsla(45, 62%, 70%, .5);
+		}
 	}
 }
 
-.photo-1 {
-	grid-area: photo-1;
-}
-
-.Photo-2 {
-	grid-area: Photo-2;
-}
-
-.Photo-3 {
-	grid-area: Photo-3;
-}
-
-.Photo-4 {
-	grid-area: Photo-4;
-}
-
-.Photo-5 {
-	grid-area: Photo-5;
-}
-// koniec testu testu
-
 .ayurveda {
-
 	&__hero {
 		position: relative;
 		display: flex;
@@ -155,8 +174,7 @@ header {
 		min-width: 100%;
 		max-width: 1440px;
 		min-height: 300px;
-		background-image: url('../../src/img/IMG_6157.JPG');
-		background-attachment: fixed;
+		background-image: url('../img/hero2_small.webp');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -169,7 +187,7 @@ header {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.4);
+			background-color: rgba(0, 0, 0, 0.5);
 		}
 	}
 
@@ -244,7 +262,6 @@ header {
 }
 
 .information {
-	// margin: 5rem 0;
 	background-color: $thirdColor;
 
 	&__box {
@@ -305,12 +322,17 @@ header {
 		&__title {
 			padding: 2rem 0;
 			font-size: 2.4rem;
+			line-height: 30px;
 			color: $firstcolor;
 			text-align: center;
 			text-transform: uppercase;
 		}
 
 		&__head {
+			&--desktop {
+				display: none;
+			}
+
 			&--name {
 				font-size: 2rem;
 			}
@@ -318,16 +340,7 @@ header {
 			&__times {
 				font-size: 1.4rem;
 				font-weight: bold;
-
-				& th {
-					text-align: center;
-				}
-			}
-
-			& .desktop {
-				display: none;
-				font-size: 2rem;
-				font-weight: 400;
+				text-align: center;
 			}
 		}
 
@@ -335,17 +348,24 @@ header {
 			&__title {
 				margin: 1rem;
 				font-size: 1.8rem;
+				line-height: 25px;
 				font-weight: bold;
 				color: $firstcolor;
 			}
 
 			&__text {
 				font-size: 1.6rem;
-				line-height: 20px;
+				line-height: 22px;
 			}
 
 			&__elements {
 				border-bottom: 1px solid $secondColor;
+
+				&--mobile {
+					font-size: 1.4rem;
+					font-weight: bold;
+					text-align: center;
+				}
 
 				&--desktop-box {
 					display: none;
@@ -447,8 +467,12 @@ header {
 	}
 
 	&__copyright {
-		padding-top: 2rem;
+		padding-top: 1.5rem;
 		text-align: center;
+
+		& p {
+			font-size: 1rem;
+		}
 	}
 }
 

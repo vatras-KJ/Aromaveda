@@ -1,7 +1,24 @@
 @media (min-width: 576px) {
+	.nav {
+		&__box {
+			&__logo {
+				&--text {
+					letter-spacing: 2px;
+				}
+			}
+		}
+	}
+
+	.header {
+		&--title {
+			font-size: 7rem;
+			letter-spacing: 5px;
+		}
+	}
+
 	.ayurveda {
 		&__hero {
-			min-height:400px;
+			min-height: 400px;
 		}
 
 		&--title {
@@ -38,7 +55,7 @@
 	}
 
 	.ofert {
-		align-items: center; // new
+		align-items: center;
 
 		&__table {
 			&__title {
@@ -46,33 +63,29 @@
 			}
 
 			&__head {
-				& .mobile {
-					display: none; //new
-				}
-
-				& .desktop {
-					display: inline-block; //new
+				&--desktop {
+					display: table-header-group;
 				}
 			}
 
 			&__body {
 				&__title {
-					margin: 1rem 0; // new
+					margin: 1rem 0;
 				}
 
 				&__elements {
-					&--mobile-box {
-						display: none; //new
+					&--mobile {
+						display: none;
 					}
 
 					&--desktop-box {
-						display: inline-block; //new
-						text-align: start; //new
+						display: inline-block;
+						text-align: start;
 					}
 				}
 
 				& .ofert__price {
-					width: 13%; //new
+					width: 13%;
 				}
 			}
 		}
