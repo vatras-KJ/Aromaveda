@@ -132,6 +132,12 @@
 		}
 	}
 
+	.question {
+		&--title {
+			font-size: 4rem;
+		}
+	}
+
 	.footer {
 		&__contact {
 			&--text {
