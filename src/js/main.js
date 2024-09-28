@@ -4,6 +4,8 @@ const cookieBox = document.querySelector('.cookie')
 const cookieBtn = document.querySelector('.cookie__btn')
 const disclaimerBtn = document.querySelector('.disclaimer__btn')
 const disclaimerText = document.querySelector('.disclaimer__text')
+const questions = document.querySelectorAll('.question__box__element')
+const allAnswerText = document.querySelectorAll('.question__box__element--text')
 
 const openMenu = () => {
     menuBox.classList.toggle('nav__box__menu__elements--open')
@@ -12,6 +14,25 @@ const openMenu = () => {
 const closeNavbar = () => {
     menuBox.classList.remove('nav__box__menu__elements--open')
  }
+
+ const checkAnswerShow = () => {
+    allAnswerText.forEach(answerText => {
+        if(answerText.classList.contains('question__box__element--show')) {
+            answerText.classList.remove('question__box__element--show')
+        }
+    })
+}
+
+const showAnswer = (e) => {
+    checkAnswerShow()
+    const answerText = e.target.querySelector('.question__box__element--text')
+    answerText.classList.toggle('question__box__element--show')
+}
+
+
+questions.forEach(question => {
+    question.addEventListener('click', showAnswer)
+})
 
 const showCookie = () => {
     const cookieEaten = localStorage.getItem('cookie')
