@@ -104,6 +104,16 @@
 				&--open {
 					display: flex;
 				}
+
+				& .booksy {
+					display: flex;
+					align-items: center;
+					& img {
+						height: 2.5rem;
+						// width: 50px;
+					}
+				}
+
 			}
 		}
 	}
@@ -526,3 +536,4 @@
 @import './media/small';
 @import './media/medium';
 @import './media/large';
+@import './media/extraLarge';
