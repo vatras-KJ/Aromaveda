@@ -1,7 +1,8 @@
 @media (min-width: 992px) {
 
 	.header {
-		background-image: url('../img/hero.webp');
+		// background-image: url('../img/hero.webp');
+		background-image: url('../img/hero_new.webp');
 
 		&::after {
 			background-color: rgba(0, 0, 0, 0.7);
@@ -13,21 +14,62 @@
 		}
 	}
 
-	.ayurveda {
-		&__hero {
-			min-height: 700px;
-			background-image: url('../img/hero2.webp');
-			background-attachment: fixed;
-		}
+	.hero {
+		min-height: 700px;
+		background-image: url('../img/hero2.webp');
+		background-attachment: fixed;
 
 		&--title {
 			font-size: 6rem;
 		}
+	}
+
+	.description {
+
+		&-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+			grid-template-rows: 1fr 1fr; 
+			gap: 20px 40px;
+			grid-auto-flow: row;
+
+			&1 { grid-area: 1 / 1 / 2 / 3; }
+			&2 { grid-area: 1 / 3 / 2 / 5; }
+			&3 { grid-area: 1 / 5 / 2 / 7; }
+			&4 { grid-area: 2 / 1 / 3 / 4; }
+			&5 { grid-area: 2 / 4 / 3 / 7; }
+		}
+
+		.title-grid {
+			margin: 1rem 0;
+			font-size: 2.2rem;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 4px;
+			color: $firstcolor;
+			text-transform: uppercase;
+		}
+
+		.text-grid {
+			line-height: 25px;
+		}
+
+	&-text {
+		margin-top: 2rem;
+		text-align: center;
+		& p {
+			font-size: 2rem;
+			line-height: 25px;
+		}
+	}
+}
+
+	.ayurveda {
 
 		&__box {		
 			&--text {
-				font-size: 2.2rem;
-				line-height: 30px;
+				// font-size: 2.2rem;
+				line-height: 25px;
 			}
 
 			&__second {
@@ -60,9 +102,9 @@
 			font-size: 4rem;
 		}
 
-		&--text {
-			font-size: 2.2rem;
-		}
+		// &--text {
+		// 	font-size: 2.2rem;
+		// }
 	}
 
 	.ofert {

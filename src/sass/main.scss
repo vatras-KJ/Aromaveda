@@ -61,7 +61,7 @@
 				align-items: center;
 				background-color: $secondColor;
 				border-bottom: solid 1px $firstcolor;
-				transform: translateY(55%);
+				transform: translateY(65%);
 				z-index: -1;
 
 				& a {
@@ -113,7 +113,6 @@
 						// width: 50px;
 					}
 				}
-
 			}
 		}
 	}
@@ -125,8 +124,9 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url('../img/hero_small.webp');
-	background-position: center;
+	// background-image: url('../img/hero_small.webp');
+	background-image: url('../img/hero_new_4_small.webp');
+	background-position: 60%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
@@ -170,45 +170,91 @@
 		z-index: 1;
 
 		&:hover {
-			background-color: hsla(45, 62%, 70%, .5);
+			background-color: hsla(45, 62%, 70%, 0.5);
 		}
 	}
 }
 
-.ayurveda {
-	&__hero {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-width: 100%;
-		max-width: 1440px;
-		min-height: 300px;
-		background-image: url('../img/hero2_small.webp');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		z-index: 0;
+.hero {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100%;
+	max-width: 1440px;
+	min-height: 300px;
+	background-image: url('../img/hero2_small.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 0;
 
-		&::after {
-			position: absolute;
-			content: '';
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.5);
-		}
+	&::after {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 
 	&--title {
-		padding: 2rem 0;
+		padding: 2rem;
 		font-size: 4rem;
 		letter-spacing: 3px;
 		text-align: center;
 		text-transform: uppercase;
 		color: $firstcolor;
 		z-index: 1;
+	}
+}
+
+.description {
+
+		&-grid {
+			display: grid;
+			grid-template-columns: 1fr ; 
+			// grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+			gap: 40px 0;
+			grid-auto-flow: row;
+		}
+
+		.title-grid {
+			margin: 1rem 0;
+			font-size: 2.2rem;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 4px;
+			color: $firstcolor;
+			text-transform: uppercase;
+		}
+
+		.text-grid {
+			line-height: 25px;
+		}
+
+	&-text {
+		margin-top: 2rem;
+		text-align: center;
+		& p {
+			font-size: 2rem;
+			line-height: 25px;
+		}
+	}
+}
+
+.ayurveda {
+
+	&-title {
+		padding: 2rem 0 4rem 0;
+		text-transform: uppercase;
+
+		& h1 {
+			text-align: center;
+			font-size: 4rem;
+			letter-spacing: 3px;
+		}
 	}
 
 	&__box {
@@ -408,7 +454,7 @@
 			padding: 1rem;
 			background-color: $thirdColor;
 			border-radius: 12px;
-			transition: background-color .3s;
+			transition: background-color 0.3s;
 			cursor: pointer;
 
 			&:hover {
@@ -417,7 +463,7 @@
 
 			&--title {
 				padding: 1.5rem 0;
-				font-size: 2.5rem;
+				font-size: 2.2rem;
 				pointer-events: none;
 			}
 			&--text {

@@ -16,15 +16,14 @@
 		}
 	}
 
-	.ayurveda {
-		&__hero {
-			min-height: 400px;
-		}
-
+	.hero {
+		min-height: 400px;
 		&--title {
 			font-size: 4.5rem;
 		}
+	}
 
+	.ayurveda {
 		&__box {
 			&--text {
 				text-align: left;
