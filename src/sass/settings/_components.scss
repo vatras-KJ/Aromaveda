@@ -44,10 +44,33 @@ p, a {
     padding: 4rem 2rem;
 }
 
+.aplications {
+    display: none;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .booksy {
+        display: flex;
+        align-items: center;
+        margin: 0 2rem 0 0;
+        & img {
+            height: 2rem;
+        }
+    }
+    
+    .facebook {
+        color: rgb(36, 36, 201);
+        & i {
+            font-size: 2.5rem;
+        }
+    }
+}
+
 .downloand--file {
     padding: 1rem 2rem;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     background-color: $firstcolor;
     border: 1px solid $firstcolor;
     border-radius: 12px;

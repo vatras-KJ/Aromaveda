@@ -112,6 +112,23 @@
 					justify-content: flex-start;
 				}
 			}
+			.aplications {
+				display: flex;
+				margin: 0 0 2rem 0;
+				justify-content: flex-start;
+			
+				.booksy {
+					& img {
+						height: 3rem;
+					}
+				}
+				
+				.facebook {
+					& i {
+						font-size: 3rem;
+					}
+				}
+			}
 		}
 
 		.downloand--file {

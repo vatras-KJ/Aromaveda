@@ -1,5 +1,49 @@
 @media (min-width: 992px) {
 
+	.nav {
+		padding-bottom: 2rem;
+		&__box {
+			flex-direction: column;
+			&__menu {
+
+				&__elements {
+					& a {
+						&:first-child {
+							display: inline-block;
+						}
+					}
+				}
+				&__burger {
+					&--icon {
+						display: none;
+					}
+				}
+
+				&__elements {
+					display: flex;
+					position: relative;
+					padding: 0 2rem;
+					bottom: 0;
+					width: 100%;
+					flex-direction: row;
+					border-bottom: solid 0px $firstcolor;
+					transform: translateY(0);
+					z-index: 90;
+
+					& a {
+						font-size: 1.8rem;
+					}
+				}
+
+				.aplications {
+					display: flex;
+				}
+			}
+		}
+	}
+
+
+
 	.header {
 		// background-image: url('../img/hero.webp');
 		background-image: url('../img/hero_new.webp');
@@ -149,7 +193,7 @@
 	.footer {
 		&__contact {
 			&--text {
-				font-size: 2rem;
+				font-size: 1.8rem;
 			}
 			&__box {
 				&__links {
