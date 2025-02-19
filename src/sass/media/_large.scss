@@ -43,12 +43,11 @@
 	}
 
 	.header {
-		// background-image: url('../img/hero.webp');
-		background-image: url('../img/hero_new.webp');
+		// background-image: url('../img/hero_new.webp');
 
-		&::after {
-			background-color: rgba(0, 0, 0, 0.7);
-		}
+		// &::after {
+		// 	background-color: rgba(0, 0, 0, 0.7);
+		// }
 
 		&--title {
 			font-size: 10rem;
@@ -58,7 +57,7 @@
 
 	.hero {
 		min-height: 402px; // 700
-		background-image: url('../img/hero2.webp');
+		// background-image: url('../img/hero2.webp');
 		background-attachment: fixed;
 
 		&--title {
@@ -144,9 +143,15 @@
 			font-size: 4rem;
 		}
 
-		// &--text {
-		// 	font-size: 2.2rem;
-		// }
+		.target {
+			&__box {
+				&--img {
+					& img {
+						width: 80%;
+					}
+				}
+			}
+		}
 	}
 
 	.ofert {

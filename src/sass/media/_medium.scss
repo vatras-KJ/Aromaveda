@@ -1,4 +1,21 @@
 @media (min-width: 768px) {
+	.target {
+		&__box {
+			flex-direction: row;
+	
+			&--img {	
+				width: 45%;
+				& img {
+					display: inline-block;
+				}
+			}
+
+			&--text {
+				width: 45%;
+			}
+		}
+	}
+
 	.description {
 		&-grid {
 			display: grid;
