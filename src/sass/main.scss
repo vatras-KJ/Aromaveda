@@ -32,9 +32,6 @@
 		&__menu {
 			display: flex;
 			align-items: center;
-			// flex-direction: row-reverse;
-			// justify-content: space-between;
-			// flex-direction: column;
 
 			&__burger {
 				margin: 0 2rem;
@@ -231,7 +228,6 @@
 	&-grid {
 		display: grid;
 		grid-template-columns: 1fr;
-		// grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 		gap: 40px 0;
 		grid-auto-flow: row;
 	}
