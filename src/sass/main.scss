@@ -147,17 +147,11 @@
 		color: $firstcolor;
 		text-transform: uppercase;
 		z-index: 1;
+	}
 
-		// &-2 {
-		// 	width: 80%;
-		// 	padding: 2rem;
-		// 	letter-spacing: 3px;
-		// 	font-size: 1.8rem;
-		// 	color: $firstcolor;
-		// 	z-index: 1;
-		// 	line-height: 35px;
-		// 	font-weight: bold;
-		// }
+	& .second--text {
+		padding-top: 1rem;
+		font-size: 2rem;
 	}
 
 	&--btn {
@@ -179,6 +173,21 @@
 
 		&:hover {
 			background-color: hsla(45, 62%, 70%, 0.5);
+		}
+	}
+
+	.booksy--box {
+		.booksy {
+			background-color: $firstcolor;
+			padding: 2rem;
+			border-radius: 12px;
+			transition: background-color 0.3s;
+			cursor: pointer;
+			z-index: 1;
+
+			&:hover {
+				background-color: hsla(45, 62%, 70%, 0.5);
+			}
 		}
 	}
 }
@@ -219,28 +228,27 @@
 }
 
 .description {
+	&-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		// grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		gap: 40px 0;
+		grid-auto-flow: row;
+	}
 
-		&-grid {
-			display: grid;
-			grid-template-columns: 1fr ; 
-			// grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-			gap: 40px 0;
-			grid-auto-flow: row;
-		}
+	.title-grid {
+		margin: 1rem 0;
+		font-size: 2.2rem;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 4px;
+		color: $firstcolor;
+		text-transform: uppercase;
+	}
 
-		.title-grid {
-			margin: 1rem 0;
-			font-size: 2.2rem;
-			font-weight: bold;
-			text-align: center;
-			letter-spacing: 4px;
-			color: $firstcolor;
-			text-transform: uppercase;
-		}
-
-		.text-grid {
-			line-height: 25px;
-		}
+	.text-grid {
+		line-height: 25px;
+	}
 
 	&-text {
 		margin-top: 4rem;
@@ -253,7 +261,6 @@
 }
 
 .ayurveda {
-
 	&-title {
 		padding: 2rem 0 4rem 0;
 		text-transform: uppercase;
@@ -568,17 +575,18 @@
 		.aplications {
 			display: flex;
 			margin: 2rem;
-			padding: .5rem;
+			padding: 0.5rem;
 			justify-content: center;
 			order: 4;
-		
+
 			.booksy {
 				& img {
 					height: 3rem;
 				}
 			}
-			
-			.facebook, .instagram {
+
+			.facebook,
+			.instagram {
 				& i {
 					font-size: 3rem;
 				}
