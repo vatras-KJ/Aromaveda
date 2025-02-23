@@ -43,6 +43,7 @@
 	}
 
 	.header {
+		background-image: url('../img/hero_new.webp');
 		&--title {
 			font-size: 10rem;
 			letter-spacing: 25px;
@@ -51,6 +52,7 @@
 
 	.hero {
 		min-height: 402px; // 700
+		background-image: url('../img/hero2.webp');
 		background-attachment: fixed;
 
 		&--title {
