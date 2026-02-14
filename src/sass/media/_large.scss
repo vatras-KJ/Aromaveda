@@ -1,11 +1,9 @@
 @media (min-width: 992px) {
-
 	.nav {
 		padding-bottom: 2rem;
 		&__box {
 			flex-direction: column;
 			&__menu {
-
 				&__elements {
 					& a {
 						&:first-child {
@@ -61,19 +59,28 @@
 	}
 
 	.description {
-
 		&-grid {
 			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-			grid-template-rows: 1fr 1fr; 
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
 			gap: 20px 40px;
 			grid-auto-flow: row;
 
-			&1 { grid-area: 1 / 1 / 2 / 3; }
-			&2 { grid-area: 1 / 3 / 2 / 5; }
-			&3 { grid-area: 1 / 5 / 2 / 7; }
-			&4 { grid-area: 2 / 1 / 3 / 4; }
-			&5 { grid-area: 2 / 4 / 3 / 7; }
+			&1 {
+				grid-area: 1 / 1 / 2 / 3;
+			}
+			&2 {
+				grid-area: 1 / 3 / 2 / 5;
+			}
+			&3 {
+				grid-area: 1 / 5 / 2 / 7;
+			}
+			&4 {
+				grid-area: 2 / 1 / 3 / 4;
+			}
+			&5 {
+				grid-area: 2 / 4 / 3 / 7;
+			}
 		}
 
 		.title-grid {
@@ -90,19 +97,18 @@
 			line-height: 25px;
 		}
 
-	&-text {
-		margin-top: 2rem;
-		text-align: center;
-		& p {
-			font-size: 2rem;
-			line-height: 25px;
+		&-text {
+			margin-top: 2rem;
+			text-align: center;
+			& p {
+				font-size: 2rem;
+				line-height: 25px;
+			}
 		}
 	}
-}
 
 	.ayurveda {
-
-		&__box {		
+		&__box {
 			&--text {
 				line-height: 25px;
 			}
@@ -122,7 +128,7 @@
 						width: 40%;
 						min-height: 100px;
 					}
-		
+
 					& p:first-child {
 						margin-bottom: 0;
 						margin-right: 2rem;
@@ -148,6 +154,25 @@
 		}
 	}
 
+	.voucher {
+		margin: 4rem 0;
+
+		.hero {
+			min-height: 320px;
+			background-image: url('../img/vouchers_big.png');
+		}
+
+		&__box {
+			min-height: 10rem;
+
+			&--text {
+				padding: 2rem;
+				margin-bottom: 0;
+				max-height: 20rem;
+			}
+		}
+	}
+
 	.ofert {
 		&__table {
 			&__title {
@@ -157,10 +182,10 @@
 			&__head {
 				&__times {
 					font-size: 1.8rem;
-
 				}
 
-				& .desktop, &__times th {
+				& .desktop,
+				&__times th {
 					font-size: 2.2rem;
 				}
 			}

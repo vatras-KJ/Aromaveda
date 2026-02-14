@@ -44,7 +44,6 @@
 
 		&__box {
 			&--img {
-	
 				& img {
 					display: none;
 				}
@@ -52,12 +51,22 @@
 		}
 	}
 
-	.information {
+	.information,
+	.voucher {
 		&__box {
 			&--text {
 				margin-bottom: 2rem;
 				line-height: 30px;
 				font-size: 2.2rem;
+			}
+		}
+	}
+
+	.voucher {
+		&__box {
+			&--text {
+				margin-bottom: 0;
+				max-height: 15rem;
 			}
 		}
 	}
@@ -125,13 +134,13 @@
 				display: flex;
 				margin: 0 0 2rem 0;
 				justify-content: flex-start;
-			
+
 				.booksy {
 					& img {
 						height: 3rem;
 					}
 				}
-				
+
 				.facebook {
 					& i {
 						font-size: 3rem;

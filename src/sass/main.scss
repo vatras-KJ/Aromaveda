@@ -44,7 +44,9 @@
 					border: solid 1px transparent;
 					border-radius: 8px;
 					pointer-events: none;
-					transition: color 0.3s, border-color 0.3s;
+					transition:
+						color 0.3s,
+						border-color 0.3s;
 				}
 
 				&:hover > &--icon {
@@ -88,7 +90,9 @@
 						margin-right: 2rem;
 						border-radius: 20px;
 						background-color: $firstcolor;
-						transition: background-color 0.3s, transform 0.3s;
+						transition:
+							background-color 0.3s,
+							transform 0.3s;
 
 						&:hover {
 							transform: scale(1.1);
@@ -345,7 +349,8 @@
 	}
 }
 
-.information {
+.information,
+.voucher {
 	background-color: $thirdColor;
 
 	&__box {
@@ -374,6 +379,27 @@
 			position: relative;
 			font-size: 2rem;
 			animation: scale 1.5s infinite;
+		}
+	}
+}
+
+.voucher {
+	margin: 4rem 0;
+
+	.hero {
+		background-image: url('../img/vouchers.png');
+		&--title {
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	&__box {
+		min-height: 10rem;
+
+		&--text {
+			padding: 2rem;
+			margin-bottom: 0;
+			max-height: 12rem;
 		}
 	}
 }

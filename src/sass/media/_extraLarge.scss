@@ -1,5 +1,5 @@
 @media (min-width: 1200px) {
-    .nav {
+	.nav {
 		padding-bottom: 0;
 		&__box {
 			flex-direction: row;
@@ -33,6 +33,17 @@
 	}
 
 	.hero {
-		min-height: 600px;
+		min-height: 500px;
+	}
+
+	.voucher {
+		.hero {
+		min-height: 350px;
+		}
+
+		&__box {
+			min-height: 10rem;
+
+		}
 	}
 }
