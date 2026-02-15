@@ -150,6 +150,15 @@
 		z-index: 1;
 	}
 
+	& .header--voucher {
+		position: relative;
+		padding: 1rem;
+		width: 100vw;
+		text-align: center;
+		font-size: 2.4rem;
+		background-color: rgba(51, 51, 51, 0.8);
+	}
+
 	& .second--text {
 		padding-top: 1rem;
 		font-size: 2rem;
